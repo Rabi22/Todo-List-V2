@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
+require('dotenv').config();
 const app = express();
 
 app.use(express.static('public'));
@@ -10,7 +11,15 @@ app.set('view engine', 'ejs');
 
 ////////////////mongo ////////////////////////////////////////
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/todoV2');
+
+// connect to atlas using environment variable
+mongoose.connect(process.env.mongodb_url)
+  .then(() => {
+    console.log('Connected to MongoDB Atlas successfully');
+  })
+  .catch((error) => {
+    console.error('MongoDB connection error:', error);
+  });
 
 let todoSchema = new mongoose.Schema({
     task : {
