@@ -5,7 +5,6 @@
 <div align="center">
   <img src="https://img.shields.io/github/stars/Rabi22/Todo-List-V2?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars">
   <img src="https://img.shields.io/github/forks/Rabi22/Todo-List-V2?style=for-the-badge&logo=github&color=blue" alt="GitHub Forks">
-  <img src="https://img.shields.io/github/license/Rabi22/Todo-List-V2?style=for-the-badge&color=green" alt="License">
   <img src="https://img.shields.io/github/last-commit/Rabi22/Todo-List-V2?style=for-the-badge&color=red" alt="Last Commit">
 </div>
 
